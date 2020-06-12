@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+// 文库状态
+// 编辑中
+.edit {
+    color: $unSubmitColor;
+}
+// 已上机
+.operate {
+    color: $onWayColor;
+}
+// 分析完成
+.finish {
+    color: $arrivedColor;
+}
+
+

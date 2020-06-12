@@ -1,0 +1,66 @@
+@import '../variables.scss';
+.pad {
+    padding: 0 20px;
+}
+.el-drawer {
+    overflow: scroll;
+}
+.el-drawer__header {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .base {
+        display: flex;
+        font-size: 14px;
+        color: #606266;
+        p {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.table {
+    margin: 0;
+    .el-link {
+        display: inline;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+// 状态
+.abandon {
+    color: $unqualifiedColor;
+}
+.checked {
+    color: $arrivedColor;
+}
+.insert {
+    color: $onWayColor;
+}
+
+// 把全选隐藏掉
+.disabledSelection .cell .el-checkbox__inner {
+    display: none;
+    position: relative;
+}
+.disabledSelection .cell:before {
+    content: "选择";
+    position: absolute;
+    left: 10px;
+}
+
+
+.form {
+    .el-form-item {
+        margin-bottom: 20px;
+        .el-input {
+            min-width: 300px;
+        }
+    }
+}

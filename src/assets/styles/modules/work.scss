@@ -1,0 +1,32 @@
+.transferWrap {
+    display: flex;
+    .left {
+        flex: auto;
+        max-width: 46%;
+        .el-table__empty-block {
+            min-height: 580px;
+            width: auto !important;
+        }
+    }
+    .center {
+        flex: none;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .el-button {
+            margin: 40px auto;
+        }
+    }
+    .right {
+        flex: auto;
+        max-width: 48%;
+        .el-table {
+            margin-top: 5px;
+        }
+        .el-table__empty-block {
+            min-height: 680px;
+            width: auto !important;
+        }
+    }
+}

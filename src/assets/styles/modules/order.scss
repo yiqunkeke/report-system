@@ -1,0 +1,57 @@
+@import '../variables.scss';
+.pop {
+    h4 {
+        margin-bottom: 10px;
+    }
+    .el-row {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        .el-col {
+            margin-bottom: 10px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+            border: none;
+        }
+    }
+}
+
+.unSubmit {
+    color: $unSubmitColor;
+}
+.onWay {
+    color: $onWayColor;
+}
+.arrived {
+    color: $arrivedColor;
+}
+.unqualified {
+    color: $unqualifiedColor;
+}
+.cancelDetection {
+    color: $cancelColor;
+}
+.todo {
+    color: $unSubmitColor;
+}
+.reportUploaded {
+    color: $uploadedColor;
+}
+
+// 把全选隐藏掉
+.disabledSelection .cell .el-checkbox__inner {
+    display: none;
+    position: relative;
+}
+.disabledSelection .cell:before {
+    content: "选择";
+    position: absolute;
+    left: 10px;
+}
+
+// 订单详情
+.detectionItem {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
